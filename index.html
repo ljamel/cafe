@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <title> exos 1 </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" media="screen and (max-width: 800px)" href="css/mobile.css" type="text/css" />
+  <link rel="stylesheet" href="css/modal.css">
+</head>
+
+<body>
+
+<header>
+  <ul>
+    <li><a href="#home">HOME</a></li>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#menu">MENU</a></li>
+    <li><a href="#where">WHERE</a></li>
+  </ul>
+
+
+  <div class="entete-text">
+    <h1>The <br /> cafe</h1>
+  </div>
+
+  <div class="entete-text2">
+    <p class="open2">Open from to 5pm</p>
+    <p>5 avenue address</p>
+  </div>
+
+</header>
+
+
+<div class="corp">
+
+  <div id="about">
+    <div id="timer"> </div>
+
+    <h2 class="abouth2">ABOUT THE CAFE</h2>
+
+    <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+    <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+
+    <div class="citation">
+      <p>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</p>
+
+      <p>Chef, Coffeeist and Owner: Liam Brown</p>
+    </div>
+    <img src="images/coffeeshop.jpg">
+
+    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+
+    <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+  </div>
+
+  <div id="menu">
+    <h2 class="menutitle">MENU</h2>
+
+    <div class="menu2">
+
+        <div class="menualtern">
+          <span id="heat" class="linkheat">Heat</span>
+          <span id="drink" class="linkdrink">Drink</span>
+        </div>
+
+        <div id="drink2">
+        <p>
+        <span class="title-menu">Coffee</span>
+        <br />
+        Regular coffee 2.50
+        </p>
+
+        <p>
+        <span class="title-menu">Chocolato</span>
+        <br />
+        Chocolate espresso with milk 4.50
+        </p>
+
+        <p>
+        <span class="title-menu">Corretto</span>
+        <br />
+        Whiskey and coffee 5.00
+        </p>
+
+        <p>
+        <span class="title-menu">Iced tea</span>
+        <br />
+        Hot tea, except not hot 3.00
+        </p>
+
+        <p>
+        <span class="title-menu">Soda</span>
+        <br />
+        Coke, Sprite, Fanta, etc. 2.50
+        </p>
+
+      </div>
+      <div id="heat2">
+
+        <p>
+          <span class="title-menu">Bread Basket</span>
+          <br />
+          Assortment of fresh baked fruit breads and muffins 5.50
+        </p>
+
+        <p>
+          <span class="title-menu">Honey Almond Granola with Fruits</span>
+          <br />
+          Natural cereal of honey toasted oats, raisins, almonds and dates 7.00
+        </p>
+
+        <p>
+          <span class="title-menu">Belgian Waffle</span>
+          <br />
+          Vanilla flavored batter with malted flour 7.50
+        </p>
+
+        <p>
+          <span class="title-menu">Scrambled eggs</span>
+          <br />
+          Scrambled eggs, roasted red pepper and garlic, with green onions 7.50
+        </p>
+
+        <p>
+          <span class="title-menu">Blueberry Pancakes</span>
+          <br />
+          With syrup, butter and lots of berries 8.50
+        </p>
+      </div>
+
+    </div>
+  <img class="margin-top" src="images/coffeeshop.jpg">
+  </div>
+
+  <div id="where">
+    <h2>WHERE TO FIND US</h2>
+    <p>Find us at some address at some place.</p>
+    <img src="images/map.jpg">
+
+    <p><span class="fyi"> FYI! </span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+
+    <p>Reserve a table, ask for today's special or just send us a message:</p>
+
+    <form action="" method="get">
+      <input type="text" id="name" name="name" value="name" placeholder="name">
+      <input type="number" id="nombre" name="people" placeholder="who many peoples" max="50">
+      <input type="date" id="date" name="date" value="" min="2021-01-29" max="2021-10-29">
+      <input type="time" id="time" name="time" value="" min="09:00" max="18:00">
+      <input type="text" name="message" id="message" value="" placeholder="message">
+
+      <div id="result"></div>
+
+      <button id="button" type="button" name="button"> SEND MESSAGE </button>
+    </form>
+
+    <button id="show"> voir les reservations </button>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Veuiller accepter nos cookies.</p>
+        <span class="close" id="accept"> Accpeter</span>
+      </div>
+
+    </div>
+
+<!--
+    <button type="button" name="button" onclick="loadDoc()">
+      test ajax cliquez ici
+    </button>
+
+    <table  id="demo">
+    </table>
+  -->
+<!--
+  <p>First name: <input type="text" onkeyup="showCustomer(this.value)"></p>
+-->
+  <div id="txtHint"></div>
+
+  </div>
+
+<footer>Powered by <a href="">w3.css</a></footer>
+</div>
+
+</body>
+
+<script src="js/menu.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/ajaxtest.js"></script>
+<script src="js/reservation.js"></script>
+<script src="js/showreservation.js"></script>
+<script src="js/checkreservation.js"></script>
+
+
+<script>
+  const picker = document.getElementById('date');
+  picker.addEventListener('input', function(e){
+    var day = new Date(this.value).getUTCDay();
+    if([6,0].includes(day)){
+      e.preventDefault();
+      this.value = '';
+      alert('Weekends not allowed');
+    }
+  });
+</script>
+<!--
+<script>
+function showCustomer(str) {
+  if (str == "") {
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  }
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("txtHint").innerHTML = this.responseText;
+  }
+  xhttp.open("GET", "getcustomer.php?q="+str);
+  xhttp.send();
+}
+</script>
+-->
+
+
+
+
+
+</html>

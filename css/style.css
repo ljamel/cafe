@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: "Inconsolata", sans-serif;
+  background-color: #F7F5F2;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li a {
+  padding: 10px;
+}
+
+li:hover a {
+  background-color: grey;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 450%;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  height: 50px;
+  margin-top: 0px;
+}
+li {
+  margin-top: 15px;
+  list-style: none;
+}
+
+header {
+  background-image: url("../images/photo_cafe.jpg");
+  min-height: 75%;
+  color: white;
+  background-repeat: no-repeat;
+}
+
+.entete-text {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+}
+
+.entete-text2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.open2 {
+  background-color: black;
+
+}
+
+#about {
+  margin-top: 90px;
+}
+.corp {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  text-align: justify;
+}
+
+h2 {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.abouth2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+
+.citation {
+  background-color: #F1F1F1;
+  border-left: 6px solid #CCCCCC;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.menutitle {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+
+#heat2 {
+  padding: 12px;
+}
+
+#drink2 {
+  display: none;
+  padding: 12px;
+}
+
+/*
+#drink2:target {
+  display: block;
+}
+
+#drink2:target + #heat2 {
+  display: none;
+}
+
+#heat2:target + #drink2 {
+  display: none;
+}
+
+#heat2:target {
+  display: block;
+}
+*/
+
+
+
+.menu2 {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.menualtern {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 8px;
+}
+
+div a {
+  color: black;
+}
+
+.linkheat {
+  background-color: grey;
+  color: white;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.linkdrink {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.margin-top {
+  margin-top: 30px;
+}
+
+.fyi {
+  background-color: black;
+  color:white;
+  padding-left: 5px;
+}
+
+input {
+  width: 97%;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 8px;
+  border: none;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: grey;
+  color: black;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
