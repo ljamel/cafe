@@ -1,3 +1,4 @@
+"use strict";
 function loadDoc() {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {

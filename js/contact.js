@@ -1,5 +1,7 @@
 
+
 function getCookie(cname) {
+
   let name = cname + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
   let ca = decodedCookie.split(';');
@@ -33,7 +35,7 @@ function form() {
   var name = document.getElementById("name").value;
   var nombre = document.getElementById("nombre").value;
   var date = document.getElementById("date").value;
-  var date = document.getElementById("time").value;
+  var time = document.getElementById("time").value;
   var message =  document.getElementById("message").value;
 
   var contact = [name, nombre, date, message];

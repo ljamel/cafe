@@ -13,8 +13,10 @@ function reservation() {
 
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
-    console.log("ok");
+    document.getElementById("txtHint").innerHTML = this.responseText;
   }
   xhttp.open("GET", "reservation.php?q="+contact);
   xhttp.send();
+
 }
+

@@ -1,0 +1,11 @@
+{
+  "name": "exos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "<contact@progfacil.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  }
+}

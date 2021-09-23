@@ -1,13 +1,19 @@
+document.getElementById("button").onclick = reservation
 
+function reservation() {
 
-var nombre = document.getElementById("nombre").value;
-var date = document.getElementById("date").value;
-var time = document.getElementById("time").value;
+    var name = document.getElementById("name").value;
+    var nombre = document.getElementById("nombre").value;
+    var date = document.getElementById("date").value;
+    var time = document.getElementById("time").value;
+    var message = document.getElementById("message").value;
 
-var contact = [nombre, date, time];
-const xhttp = new XMLHttpRequest();
-xhttp.onload = function() {
-  document.getElementById("txtHint").innerHTML = this.responseText;
+    var contact = [name, nombre, date, time, message];
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function () {
+        document.getElementById("txtHint").innerHTML = this.responseText;
+    }
+    xhttp.open("GET", "checkreservation.php?q=" + contact);
+    xhttp.send();
+
 }
-xhttp.open("GET", "checktreservation.php?q="+contact);
-xhttp.send();

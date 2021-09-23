@@ -189,29 +189,58 @@
 
 <footer>Powered by <a href="">w3.css</a></footer>
 </div>
-
+<div id="map"></div>
 </body>
 
+
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk-UA07l9pellZaXdMjWOZkQmionsIZRk&callback=initMap&libraries=&v=weekly&channel=2"
+        async
+></script>
+<script>
+    let map;
+
+    function initMap() {
+        const mapOptions = {
+            zoom: 8,
+            center: { lat: 48.397, lng: 2.044 },
+        };
+
+        map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+        const marker = new google.maps.Marker({
+            // The below line is equivalent to writing:
+            // position: new google.maps.LatLng(-34.397, 150.644)
+            position: { lat: 48.397, lng: 2.644 },
+            map: map,
+        });
+        // You can use a LatLng literal in place of a google.maps.LatLng object when
+        // creating the Marker object. Once the Marker object is instantiated, its
+        // position will be available as a google.maps.LatLng object. In this case,
+        // we retrieve the marker's position using the
+        // google.maps.LatLng.getPosition() method.
+        const infowindow = new google.maps.InfoWindow({
+            content: "<p>Bienvenue dans mon cafe une tong acheter une demi baguette offerte </p>",
+        });
+
+        google.maps.event.addListener(marker, "click", () => {
+            infowindow.open(map, marker);
+        });
+
+    }
+</script>
 <script src="js/menu.js"></script>
 <script src="js/contact.js"></script>
 <script src="js/modal.js"></script>
 <script src="js/ajaxtest.js"></script>
-<script src="js/reservation.js"></script>
+<!-- <script src="js/reservation.js"></script> -->
 <script src="js/showreservation.js"></script>
-<script src="js/checkreservation.js"></script>
+<script src="js/reservation.js"></script>
+<script src="js/test.js"></script>
 
 
-<script>
-  const picker = document.getElementById('date');
-  picker.addEventListener('input', function(e){
-    var day = new Date(this.value).getUTCDay();
-    if([6,0].includes(day)){
-      e.preventDefault();
-      this.value = '';
-      alert('Weekends not allowed');
-    }
-  });
-</script>
+
 <!--
 <script>
 function showCustomer(str) {

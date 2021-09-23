@@ -41,6 +41,7 @@ header {
   min-height: 75%;
   color: white;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .entete-text {
@@ -189,4 +190,16 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+}
+#map {
+   height: 300px;
+ }
+
+
+@media screen and (max-width: 640px) {
+
+  header {
+    background-image: url("../images/photo_cafe_mobile.jpg");
+  }
+
 }
